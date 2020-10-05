@@ -9,7 +9,7 @@ function ghanian(){
     var day = d.split("-") 
     var year = day[0]
     var mm =parseInt(day[1])
-    var dd =parseInt(day[2]) 
+    var dd =parseInt(day[2])
     var cc = parseInt(year.slice(0,2));
     var yy = parseInt(year.slice(2,4));     
 
@@ -20,12 +20,11 @@ function ghanian(){
       alert("Born on " + weekDays[days]+ " your name is " + femaleNames[days])  
     }
     else if (gender==="male"){
-        alert("Born on " + weekDays[days]+ " your name is " + maleNames[days])
+        console.log("Born on " + weekDays[days]+ " your name is " + maleNames[days])
 
     }
     else {
-        alert("invaid input")
+        console.log("invaid input")
 
     }
-
 }

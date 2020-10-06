@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ghanian</title>
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <title>akan names</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <h1>click below to view which akan day you were born on </h1>
@@ -18,18 +17,39 @@
     Akan people are believed to have migrated to their current location from the Sahara desert and Sahel regions of Africa<br>
      into the forest region around the 11th century. Many Akans tell their history as it started in the eastern region of Africa as this is<br>
       where the ethnogenesis of the Akan as we know them today happened. </p>
-    <form>
-        <label for="date">Day:</label>
-        <input type="date" id="date"><br><br>
-        <label for="gender">gender:</label>
-        <select name="gender" id="gender">
-            <option value="select">--select--</option>
-            <option value="male">male</option>
-            <option value="female">female</option>
-        </select><br><br>
-        <button type="submit" onclick="ghanian()">submit</button>
-    </form>
-    <div class="conta">
-    </div>  
+
+        <div class="container">
+          <div class="row">
+              <div class="col-md-3"></div>
+             <div class="col-md-6">
+              <div class="card">
+                  <div class="card-header text-center">
+                      <h2>User Details</h2>
+                  </div>
+                  <div class="card-body">
+                      <form action="">
+                          <div class="form-group">
+                              <label class="text-white" for="year">Date:</label>
+                              <input type="date" name="date" class="form-control date-custom" placeholder="Enter Year of Date" id="date" required>
+                          </div>
+                          <label class="text-white" for="gender">Gender:</label>
+                          <select class="form-control mb-2 select-custom" id="genders">
+                              <option class="option-custom" value="other">Choose gender</option>
+                              <option value="male">Male</option>
+                              <option value="female">Female</option>
+                          </select>
+                          <button type="submit" class="btn btn-success" onclick="ghanian()">Submit</button>
+                      </form>
+                      
+                  </div>
+                  <div class="card-footer">
+                      <p class="text-success">Your Akan Name display here : <span class="text-info" id="result"></span></p>
+                  </div>
+             </div>
+            </div>
+              <div class="col-md-3"></div>
+          </div>
+        </div>
+    <script src="js/scripts.js"></script>  
    </body>
 </html>
